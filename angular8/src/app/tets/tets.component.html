@@ -1,0 +1,10 @@
+
+<button nz-button nzType="primary" (click)="carousel.pre()">pre</button>
+<button nz-button nzType="primary" (click)="carousel.next()">next</button>
+<div style="width: 100%;height: 500px;">
+  <nz-carousel [nzEffect]="effect" [nzDots]="false" [nzEnableSwipe]="false" #carousel>
+    <div nz-carousel-content *ngFor="let index of array">
+      <div style="margin: 20px;background: #adaaaa;height: 100%;color: #ffffff;font-size: 20px;">{{index}}</div>
+    </div>
+  </nz-carousel>
+</div>
